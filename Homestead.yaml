@@ -1,0 +1,19 @@
+ip: 192.168.11.11
+memory: 1024
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /home/genius/Projects/Triya/laravel
+        to: /home/vagrant/Code
+sites:
+    -
+        map: triya.blog
+        to: /home/vagrant/Code/public
+databases:
+    - homestead
+name: laravel
+hostname: laravel
